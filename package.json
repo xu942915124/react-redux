@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/core": "7.1.6",
     "@svgr/webpack": "2.4.1",
+    "antd": "^3.12.3",
     "axios": "^0.18.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
@@ -43,6 +44,7 @@
     "postcss-safe-parser": "4.0.1",
     "react": "^16.7.0",
     "react-app-polyfill": "^0.2.0",
+    "react-app-rewired": "^2.0.2",
     "react-dev-utils": "^7.0.1",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
@@ -51,6 +53,7 @@
     "resolve": "1.8.1",
     "sass-loader": "^7.1.0",
     "style-loader": "0.23.0",
+    "swiper": "^4.4.6",
     "terser-webpack-plugin": "1.1.0",
     "url-loader": "1.1.1",
     "webpack": "4.19.1",
@@ -59,9 +62,9 @@
     "workbox-webpack-plugin": "3.6.3"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "start": "node scripts/start.js react-app-rewired test",
+    "build": "node scripts/build.js react-app-rewired build",
+    "test": "node scripts/test.js react-app-rewired start"
   },
   "eslintConfig": {
     "extends": "react-app"
